@@ -1,3 +1,7 @@
-expense_homepage:
+expense_home:
     path:     /expense
     defaults: { _controller: ExpenseBundle:Default:index }
+
+api_expense:
+    path:     /api/v1/expense
+    defaults: { _controller: ExpenseBundle:Api:index }
