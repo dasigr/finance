@@ -1,0 +1,3 @@
+expense_homepage:
+    path:     /
+    defaults: { _controller: ExpenseBundle:Default:index }
