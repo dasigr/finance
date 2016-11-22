@@ -1,3 +1,7 @@
 expense:
     resource: "@ExpenseBundle/Resources/config/routing.yml"
     prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
