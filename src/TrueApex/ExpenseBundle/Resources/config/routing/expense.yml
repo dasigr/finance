@@ -1,0 +1,24 @@
+expense_index:
+    path:     /
+    defaults: { _controller: "ExpenseBundle:Expense:index" }
+    methods:  GET
+
+expense_show:
+    path:     /{id}/show
+    defaults: { _controller: "ExpenseBundle:Expense:show" }
+    methods:  GET
+
+expense_new:
+    path:     /new
+    defaults: { _controller: "ExpenseBundle:Expense:new" }
+    methods:  [GET, POST]
+
+expense_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ExpenseBundle:Expense:edit" }
+    methods:  [GET, POST]
+
+expense_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ExpenseBundle:Expense:delete" }
+    methods:  DELETE

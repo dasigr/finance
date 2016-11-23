@@ -1,5 +1,9 @@
+expense_expense:
+    resource: "@ExpenseBundle/Resources/config/routing/expense.yml"
+    prefix:   /expense
+
 expense_home:
-    path:     /expense
+    path:     /expense/home
     defaults: { _controller: ExpenseBundle:Default:index }
 
 api_expense:
