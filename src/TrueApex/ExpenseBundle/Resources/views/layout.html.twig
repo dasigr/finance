@@ -4,6 +4,10 @@
 
 {% block body %}
     <div id="page-wrapper"><div class="container">
-        {% block content %}{% endblock %}
+        <div id="main-wrapper">
+            <div id="content">
+                {% block content %}{% endblock %}
+            </div> <!-- /#content -->
+        </div> <!-- /#main-wrapper -->
     </div></div> <!-- /.container, /#page-wrapper -->
 {% endblock %}
