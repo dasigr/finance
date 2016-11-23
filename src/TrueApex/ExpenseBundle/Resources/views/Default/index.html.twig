@@ -18,14 +18,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {% for i in 0..10 %}
-		                        <tr>
-		                            <td>Food &amp; Drinks</td>
-		                            <td>Nov 23, 2016</td>
-		                            <td>PHP 120.00</td>
-		                            <td>Breakfast</td>
-		                        </tr>
-                        {% endfor %}
+                        <tr>
+                            <td>{{ expense.category }}</td>
+                            <td>NULL</td>
+                            <td>{{ expense.amount }}</td>
+                            <td>{{ expense.note }}</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
