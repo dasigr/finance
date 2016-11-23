@@ -22,7 +22,7 @@ class ExpenseController extends Controller
 
         $expenses = $em->getRepository('ExpenseBundle:Expense')->findAll();
 
-        return $this->render('expense/index.html.twig', array(
+        return $this->render('ExpenseBundle:Expense:index.html.twig', array(
             'expenses' => $expenses,
         ));
     }
@@ -45,7 +45,7 @@ class ExpenseController extends Controller
             return $this->redirectToRoute('expense_show', array('id' => $expense->getId()));
         }
 
-        return $this->render('expense/new.html.twig', array(
+        return $this->render('ExpenseBundle:Expense:new.html.twig', array(
             'expense' => $expense,
             'form' => $form->createView(),
         ));
@@ -59,7 +59,7 @@ class ExpenseController extends Controller
     {
         $deleteForm = $this->createDeleteForm($expense);
 
-        return $this->render('expense/show.html.twig', array(
+        return $this->render('ExpenseBundle:Expense:show.html.twig', array(
             'expense' => $expense,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -81,7 +81,7 @@ class ExpenseController extends Controller
             return $this->redirectToRoute('expense_edit', array('id' => $expense->getId()));
         }
 
-        return $this->render('expense/edit.html.twig', array(
+        return $this->render('ExpenseBundle:Expense:edit.html.twig', array(
             'expense' => $expense,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
